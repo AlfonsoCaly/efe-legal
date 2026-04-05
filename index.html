@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eFe</title>
+  <style>
+    :root {
+      --bg: #0f3f3a;
+      --card: #14514a;
+      --text: #f3ead8;
+      --muted: #d8ccb5;
+      --line: rgba(243, 234, 216, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 720px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 40px 28px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .claim {
+      margin: 12px 0 0;
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .links {
+      margin-top: 36px;
+      display: grid;
+      gap: 14px;
+    }
+
+    a.button {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px 18px;
+      background: rgba(255,255,255,0.02);
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    a.button:hover {
+      transform: translateY(-1px);
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(243, 234, 216, 0.28);
+    }
+
+    .button-title {
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .button-subtitle {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>eFe</h1>
+    <p class="claim">Efemérides diarias y curiosidades del calendario</p>
+
+    <section class="links">
+      <a class="button" href="privacy.html">
+        <span class="button-title">Aviso de privacidad</span>
+        <span class="button-subtitle">Consulta cómo funciona la app y cómo se manejan las preferencias locales y el soporte.</span>
+      </a>
+
+      <a class="button" href="terms.html">
+        <span class="button-title">Condiciones de uso</span>
+        <span class="button-subtitle">Lee los términos generales de uso de eFe y el alcance informativo del contenido.</span>
+      </a>
+
+      <a class="button" href="mailto:klyappcompany@gmail.com">
+        <span class="button-title">Comentarios y soporte</span>
+        <span class="button-subtitle">klyappcompany@gmail.com</span>
+      </a>
+    </section>
+
+    <p class="footer">
+      Sitio legal oficial de eFe.
+    </p>
+  </main>
+</body>
+</html>
